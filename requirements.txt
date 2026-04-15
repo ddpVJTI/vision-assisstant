@@ -1,0 +1,18 @@
+# Smart Vision Assistant — Dependencies
+# Install with:  pip install -r requirements.txt
+
+# Core detection
+ultralytics>=8.1.0       # YOLOv8 (downloads yolov8n.pt automatically)
+opencv-python>=4.9.0     # Camera capture + frame processing
+
+# Audio
+pywin32>=306; platform_system == "Windows"  # Direct Windows SAPI (SpVoice) backend
+
+# Image handling for Streamlit
+Pillow>=10.0.0           # PIL — converts OpenCV frames to images
+
+# Web UI
+streamlit>=1.30.0        # Streamlit web UI
+
+# (torch/torchvision are pulled in automatically by ultralytics)
+timm>=1.0.0
